@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>COORESUNTOL E.S.P. | PQRS</title>
+  <meta name="description" content="Portal institucional de COORESUNTOL E.S.P. y sistema de PQRS.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<header class="topbar">
+  <div class="container nav">
+    <a class="brand" href="#inicio"><img src="img/1.logo.jpg" alt="COORESUNTOL E.S.P." onerror="this.style.display='none'"> <span>COORESUNTOL <small>E.S.P.</small></span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Abrir menú">☰</button>
+    <nav id="mainNav">
+      <a href="#inicio">Inicio</a><a href="#empresa">Empresa</a><a href="#servicios">Servicios</a>
+      <a href="#normatividad">Normatividad</a><a href="#pqrs">PQRS</a><a href="#contacto">Contacto</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section id="inicio" class="hero"><div class="container hero-grid"><div>
+  <p class="eyebrow">SERVICIO PÚBLICO · IBAGUÉ, TOLIMA</p>
+  <h1>COORESUNTOL E.S.P.</h1>
+  <p class="lead">Atención al usuario, gestión de PQRS y acceso a información institucional desde un solo portal.</p>
+  <div class="actions"><a class="btn primary" href="#pqrs">Radicar una PQRS</a><a class="btn ghost" href="#normatividad">Consultar normatividad</a></div>
+</div><div class="hero-card"><strong>Atención al usuario</strong><p>Cra. 5A No. 22-41, Barrio El Carmen, Ibagué, Tolima</p><a href="mailto:cooresuntol2803@gmail.com">cooresuntol2803@gmail.com</a><p>300 262 6977 · 320 209 5031</p></div></div></section>
+<section id="empresa" class="section"><div class="container"><p class="eyebrow">COORESUNTOL E.S.P.</p><h2>Portal institucional</h2><div class="cards"><article><h3>Atención</h3><p>Canales digitales para recibir solicitudes y facilitar el seguimiento de los usuarios.</p></article><article><h3>Transparencia</h3><p>Espacio para publicar documentos, normatividad e información institucional.</p></article><article><h3>Gestión</h3><p>Las PQRS quedan registradas con un consecutivo único para su control.</p></article></div></div></section>
+<section id="servicios" class="section alt"><div class="container"><h2>Servicios</h2><div class="cards"><article><h3>Atención al usuario</h3><p>Orientación y recepción de solicitudes.</p></article><article><h3>PQRS</h3><p>Petición, queja, reclamo, sugerencia y demás solicitudes.</p></article><article><h3>Información pública</h3><p>Acceso organizado a documentos institucionales.</p></article></div></div></section>
+<section id="normatividad" class="section"><div class="container"><h2>Normatividad</h2><p class="muted">Guarda tus PDFs en la carpeta <code>documentos/</code> y conserva estos nombres o actualiza los enlaces.</p><div class="docs">
+  <a href="documentos/ccu.pdf" target="_blank">📄 CCU</a>
+  <a href="documentos/decreto-596-2016.pdf" target="_blank">📄 Decreto 596 de 2016</a>
+  <a href="documentos/decreto-1381-2024.pdf" target="_blank">📄 Decreto 1381 de 2024</a>
+  <a href="documentos/decreto-1077-2015.pdf" target="_blank">📄 Decreto 1077 de 2015</a>
+  <a href="documentos/auto-275-2011.pdf" target="_blank">📄 Auto 275 de 2011 — Corte Constitucional</a>
+  <a href="documentos/resolucion-cra-1011-2025.pdf" target="_blank">📄 Resolución CRA 1011 de 2025</a>
+  <a href="documentos/resolucion-2184-2019.pdf" target="_blank">📄 Resolución 2184 de 2019</a>
+  <a href="documentos/resolucion-cra-788-2017.pdf" target="_blank">📄 Resolución CRA 788 de 2017</a>
+  <a href="documentos/resolucion-mvct-0276-2016.pdf" target="_blank">📄 Resolución MVCT 0276 de 2016</a>
+</div></div></section>
+<section id="pqrs" class="section alt"><div class="container narrow"><p class="eyebrow">ATENCIÓN AL USUARIO</p><h2>Radicar una PQRS</h2><p>Complete el formulario. El sistema asignará un consecutivo y enviará la solicitud al correo institucional.</p>
+<form id="pqrsForm" class="form" enctype="multipart/form-data">
+  <div class="grid2"><label>Tipo de solicitud *<select name="tipo" required><option value="">Seleccione</option><option>Petición</option><option>Queja</option><option>Reclamo</option><option>Sugerencia</option><option>Solicitud de información</option></select></label>
+  <label>Nombre completo *<input name="nombre" required maxlength="120"></label></div>
+  <div class="grid2"><label>Documento<input name="documento" maxlength="30"></label><label>Correo electrónico *<input type="email" name="correo" required></label></div>
+  <div class="grid2"><label>Celular<input name="celular" maxlength="20"></label><label>Dirección<input name="direccion" maxlength="160"></label></div>
+  <label>Barrio<input name="barrio" maxlength="100"></label>
+  <label>Asunto *<input name="asunto" required maxlength="180"></label>
+  <label>Descripción de la solicitud *<textarea name="descripcion" required rows="7" maxlength="5000"></textarea></label>
+  <label>Adjunto <input type="file" name="archivo" accept=".pdf,.jpg,.jpeg,.png,.doc,.docx" /></label>
+  <label class="check"><input type="checkbox" name="autorizacion" value="SI" required> Autorizo el tratamiento de mis datos personales para la gestión de esta solicitud.</label>
+  <button class="btn primary" id="submitBtn" type="submit">Enviar PQRS</button>
+  <p class="form-status" id="formStatus" role="status"></p>
+</form>
+<div id="successBox" class="success" hidden></div></div></section>
+<section id="contacto" class="section"><div class="container contact"><div><h2>Contacto</h2><p>Cra. 5A No. 22-41, Barrio El Carmen<br>Ibagué, Tolima</p><p><a href="mailto:cooresuntol2803@gmail.com">cooresuntol2803@gmail.com</a><br>300 262 6977 · 320 209 5031</p></div><div><a class="btn primary" href="https://wa.me/573002626977" target="_blank" rel="noopener">WhatsApp</a></div></div></section>
+</main>
+<footer><div class="container">© <span id="year"></span> COORESUNTOL E.S.P. · Portal institucional</div></footer>
+<script src="js/script.js"></script>
+</body></html>
