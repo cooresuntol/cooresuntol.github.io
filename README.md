@@ -1,3 +1,5 @@
+[README_GITHUB.md](https://github.com/user-attachments/files/32672129/README_GITHUB.md)
+[README_GITHUB.md](https://github.com/user-attachments/files/32672110/README_GITHUB.md)
 COORESUNTOL E.S.P. — Portal GitHub Pages + PQRS por Gmail
 Esta versión elimina n8n para la primera etapa. La web se aloja en GitHub Pages y el formulario PQRS usa Google Apps Script como backend, con:
 ·	Gmail: cooresuntol2803@gmail.com
