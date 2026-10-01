@@ -1,0 +1,1 @@
+Esta carpeta queda disponible para documentos adicionales. Los documentos de Normatividad pueden colocarse en img/ para conservar los enlaces de la plantilla.

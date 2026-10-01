@@ -1,0 +1,7 @@
+COLOCA AQUÍ:
+
+- logo.png
+- imágenes del sitio si deseas agregarlas
+- los PDF de normatividad indicados en README.md
+
+Los nombres de los PDF deben coincidir exactamente con los enlaces de index.html.
